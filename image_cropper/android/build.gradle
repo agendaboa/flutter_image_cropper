@@ -38,6 +38,6 @@ android {
         disable 'InvalidPackage'
     }
     dependencies {
-        implementation 'com.github.yalantis:ucrop:2.2.8'
+        implementation 'com.github.agendaboa:ucrop:255954475c4ed56aafec22af5c6aa63a64a7be81'
     }
 }
