@@ -38,6 +38,6 @@ android {
         disable 'InvalidPackage'
     }
     dependencies {
-        implementation 'com.github.agendaboa:ucrop:255954475c4ed56aafec22af5c6aa63a64a7be81'
+        implementation 'com.github.agendaboa:ucrop:ed98bc0f203f161b9b91afaf007c79f6d5d24dd9'
     }
 }
