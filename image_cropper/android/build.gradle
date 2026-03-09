@@ -16,7 +16,7 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
-		maven { url = uri('https://jitpack.io') }
+        maven { url = uri('https://jitpack.io') }
     }
 }
 
@@ -37,7 +37,7 @@ android {
         disable 'InvalidPackage'
     }
     dependencies {
-        implementation 'com.github.agendaboa:ucrop:a87ef1ba04a188422ff883fc0661f72944c82cbf'
+        implementation 'com.github.agendaboa:ucrop:062632a95616e563f643d701dbe028d5f86558d4'
         implementation 'androidx.preference:preference:1.2.1'
     }
 }
