@@ -1,9 +1,10 @@
 #import "./include/image_cropper/FLTImageCropperPlugin.h"
-#import "TOCropViewController.h"
-#import <TOCropViewController/TOCropViewConstants.h>
+// #import "TOCropViewController.h"
+// #import <TOCropViewController/TOCropViewConstants.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <Photos/Photos.h>
 #import <UIKit/UIKit.h>
+@import TOCropViewController;
 
 @interface FLTImageCropperPlugin () <TOCropViewControllerDelegate>
 @end
@@ -77,6 +78,7 @@
                  forViewController:cropViewController];
 
     if (ratioX != (id)[NSNull null] && ratioY != (id)[NSNull null]) {
+      cropViewController.aspectRatioPreset = CGSizeMake([ratioX floatValue], [ratioY floatValue]);
       cropViewController.resetAspectRatioEnabled = NO;
       cropViewController.aspectRatioPickerButtonHidden = YES;
       cropViewController.aspectRatioLockDimensionSwapEnabled = YES;
